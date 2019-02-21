@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+void intensitylevel(int k);
+char a[10];
+int k;
+scanf("%s\n",&a);
+scanf("%d",&k);
+if( strcmp(a,"on")==0)
+ {
+intensitylevel(k);
+ }
+}
+ void intensitylevel(int k)
+ {
+ if(k<=100)
+ printf("no wiper movement and 0% pwm");
+ if((k>100)&&(k<=250))
+ printf("pwm is 25 %");
+ if((k>251)&&(k<=500))
+ printf("50 %");
+ if(k>500)
+ printf("75 %");
+ }
+
